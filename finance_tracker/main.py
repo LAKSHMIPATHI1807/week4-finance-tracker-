@@ -26,7 +26,8 @@ def display_statistics(stats):
     print(f"Lowest Expense     :{stats['minimum']}")
     print(f"Number of Entries  :{stats['count']}")
 
-def menu():
+def main():
+    print("Welcome to Finance Tracker")
     print("-"*40)
     print("              MAIN MENU")
     print("-"*40)
@@ -42,7 +43,7 @@ def menu():
     print("9. Backup/Restore Data")
     print("0. Exit")
 while True:
-    menu()
+    main()
     choice = input("Enter your Choice(0-9): ")
     
     if choice=="1":
